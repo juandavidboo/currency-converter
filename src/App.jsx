@@ -1,37 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+//import { useState } from 'react'
+import Layout from './layout/Main'
 import './App.css'
+import RoundedCard from './components/RoundedCard'
+import Converter from './components/Converter'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div className="bg-blue-500 text-white text-3xl font-bold p-6">
-        Tailwind classes test 🚀
-      </div>
-      <div className='flex justify-center'>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Layout>
+      <main className=" w-full px-8 xl:px-14 relative">
+        <div className="">
+          <div className=" container box-content py-[30px] mx-auto text-white text-center min-h-[96px] flex items-center justify-center before:content-[''] before:absolute before:left-0 before:top-0 before:min-w-full before:bg-blue-sub1 before:min-h-[295px] before:z-[-1]">
+            <h2 className='font-inter font-semibold antialiased text-[32px] leading-none text-balance'>1.00 EUR to USD - Convert Euros to US Dollars</h2>
+          </div>
+        </div>
+          <div className="container mx-auto">
+          <RoundedCard>
+            <Converter />
+          </RoundedCard>
+          </div>
+      </main>
+    </Layout>
   )
 }
 

@@ -1,70 +1,62 @@
 @import "tailwindcss";
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@theme {
+
+  /*
+    --color-*	Color utilities like bg-red-500, text-sky-300, and many more
+    --font-*	Font family utilities like font-sans
+    --text-*	Font size utilities like text-xl
+    --font-weight-*	Font weight utilities like font-bold
+    --tracking-*	Letter spacing utilities like tracking-wide
+    --leading-*	Line height utilities like leading-tight
+    --breakpoint-*	Responsive breakpoint variants like sm:*
+    --container-*	Container query variants like @sm:* and size utilities like max-w-md
+    --spacing-*	Spacing and sizing utilities like px-4, max-h-16, and many more
+    --radius-*	Border radius utilities like rounded-sm
+    --shadow-*	Box shadow utilities like shadow-md
+    --inset-shadow-*	Inset box shadow utilities like inset-shadow-xs
+    --drop-shadow-*	Drop shadow filter utilities like drop-shadow-md
+    --blur-*	Blur filter utilities like blur-md
+    --perspective-*	Perspective utilities like perspective-near
+    --aspect-*	Aspect ratio utilities like aspect-video
+    --ease-*	Transition timing function utilities like ease-out
+    --animate-*	Animation utilities like animate-spin
+  */
+
+  /*colors*/
+  --color-blue-zodiac: #0E1342;
+  --color-blue-dodger: #1A8DFF;
+  --color-blue-solitud: #E8F3FF;
+  --color-gray-cod: #111111;
+  --color-gray-silver: #CCCCCC;
+  --color-gray-dove: #666666;
+  --color-gray-boulder: #757575;
+
+  --color-blue-main: var(--color-blue-zodiac);
+  --color-blue-sub1: var(--color-blue-dodger);
+  --color-blue-sub2: var(--color-blue-solitud);
+  --color-black-main: var(--color-gray-cod);
+
+  --color-gray-1: var(--color-gray-silver);
+  --color-gray-2: var(--color-gray-dove);
+  --color-gray-3: var(--color-gray-boulder);
+
+  --font-inter: "Inter", Arial, "sans-serif";
+}
+
+body {
+  font-family: var(--font-inter);
   line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+#root {
+  margin: 0 auto;
+  padding: 0;
 }
