@@ -1,8 +1,78 @@
-# React + Vite
+# currency-converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Currency converter on API referenced value.
 
-Currently, two official plugins are available:
+## 📌 GIT repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Git repo](https://github.com/juandavidboo/currency-converter/tree/main)
+
+```sh
+git clone https://github.com/juandavidboo/currency-converter.git
+```
+
+## 🌍 API
+
+- **Api documentation:** [Vat Comply API Docs](https://www.vatcomply.com/documentation) 
+- **Api endpoing:** (https://api.vatcomply.com/rates)
+
+```http
+GET https://api.vatcomply.com/rates HTTP/1.1
+````
+
+## 🎨 Design Reference
+
+- **Figma file** [View design](https://www.figma.com/design/B7sfg7erzZUozriMWXD49H/Untitled?node-id=0-1&t=nqRMGEkY4AdZiw0r-)
+
+## 🛠 Install & Setup
+
+### Prerequisites
+
+- Vite requires Node.js version >= 18.0.0.
+- Check version steps and install with nvm:
+
+````sh
+node -v
+````
+
+- You can update your Node.js or use NVM
+
+````sh
+nvm install 18
+nvm use 18
+````
+
+### Install dependencies
+
+````sh
+npm install
+````
+
+## Available scripts
+
+| Script | Command | NPM | Description |
+|---|---|---|---|
+| dev | vite | npm run dev | # Starts local development serv |
+| build | vite build | npm run build | # Builds for production |
+| lint | eslint . | npm run lint | # Runs ESLint on all files |
+| preview | vite preview | npm run preview | # Serves production build locally |
+
+Run scripts using
+
+````sh
+npm run dev
+````
+
+## 📖 Project Overview
+
+- **Built with:** Vite + React
+- **Styling:** Tailwind CSS
+- **Validation:** React Hook Form
+- **Data Fetching:** Fetch API
+
+## Features
+
+✅Convert between EUR & USD
+✅ Live Exchange Rates (updated daily)
+✅ Input Validation
+✅ Swap Currencies Button
+✅ Responsive Design
